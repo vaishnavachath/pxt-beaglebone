@@ -1,0 +1,72 @@
+CACHE MANIFEST
+
+CACHE:
+/pxt-beaglebone/semantic.js
+/pxt-beaglebone/main.js
+/pxt-beaglebone/pxtapp.js
+/pxt-beaglebone/typescript.js
+/pxt-beaglebone/marked/marked.min.js
+/pxt-beaglebone/highlight.js/highlight.pack.js
+/pxt-beaglebone/jquery.js
+/pxt-beaglebone/pxtlib.js
+/pxt-beaglebone/pxtcompiler.js
+/pxt-beaglebone/pxtblockly.js
+/pxt-beaglebone/pxtwinrt.js
+/pxt-beaglebone/pxteditor.js
+/pxt-beaglebone/pxtsim.js
+/pxt-beaglebone/pxtembed.js
+/pxt-beaglebone/pxtworker.js
+/pxt-beaglebone/pxtweb.js
+/pxt-beaglebone/blockly.css
+/pxt-beaglebone/semantic.css
+/pxt-beaglebone/rtlsemantic.css
+
+
+/pxt-beaglebone/editor.js
+
+
+# blockly
+/pxt-beaglebone/blockly/media/sprites.png
+/pxt-beaglebone/blockly/media/click.mp3
+/pxt-beaglebone/blockly/media/disconnect.wav
+/pxt-beaglebone/blockly/media/delete.mp3
+
+# monaco; keep in sync with webapp/public/index.html
+/pxt-beaglebone/vs/loader.js
+/pxt-beaglebone/vs/base/worker/workerMain.js
+/pxt-beaglebone/vs/basic-languages/src/bat.js
+/pxt-beaglebone/vs/basic-languages/src/cpp.js
+/pxt-beaglebone/vs/editor/editor.main.css
+/pxt-beaglebone/vs/editor/editor.main.js
+/pxt-beaglebone/vs/editor/editor.main.nls.js
+/pxt-beaglebone/vs/language/json/jsonMode.js
+/pxt-beaglebone/vs/language/json/jsonWorker.js
+/pxt-beaglebone/vs/language/typescript/lib/typescriptServices.js
+/pxt-beaglebone/vs/language/typescript/src/mode.js
+/pxt-beaglebone/vs/language/typescript/src/worker.js
+
+# charts
+/pxt-beaglebone/smoothie/smoothie_compressed.js
+/pxt-beaglebone/images/Bars_black.gif
+
+# ai
+/pxt-beaglebone/ai.0.js
+
+/pxt-beaglebone/worker.js
+/pxt-beaglebone/monacoworker.js
+
+# ver Wed Feb 20 2019 21:28:41 GMT+0530 (India Standard Time)
+
+# target
+/pxt-beaglebone/docs\static\logo.svg
+/pxt-beaglebone/docs\static\logo.svg
+/pxt-beaglebone/docs\static\logo.svg
+/pxt-beaglebone/docs\static\logo.svg
+/pxt-beaglebone/docs\static\Microsoft-logo_rgb_c-gray-square.png
+/pxt-beaglebone/docs\static\Microsoft-logo_rgb_c-gray.png
+/pxt-beaglebone/docs\static\hero.png
+
+/pxt-beaglebone/target.js
+  
+NETWORK:
+*
