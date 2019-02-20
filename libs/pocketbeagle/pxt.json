@@ -1,0 +1,26 @@
+{
+    "name": "pocketbeagle",
+    "description": "Support for PocketBeagle Board",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core": "file:../core"
+    },
+    "public": true,
+    "features": [
+        "i2c",
+        "pinled",
+        "pind0",
+        "pind1",
+        "pina0",
+        "pina1",
+        "buttond0",
+        "buttond1"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "beagleboneblack",
+    "description": "Support for BeagleBone Black",
+    "files": [
+        "README.md",
+        "device.d.ts",
+        "config.ts",
+        "board.json",
+        "board.svg"
+    ],
+    "core": true,
+    "dependencies": {
+        "core": "file:../core"
+    },
+    "public": true,
+    "weight": 100,
+    "features": [
+        "pinled"
+    ]
+}

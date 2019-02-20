@@ -1,0 +1,44 @@
+{
+    "name": "core",
+    "description": "The core library for Codal-based targets",
+    "files": [
+        "README.md",
+        "dal.d.ts",
+        "pins.ts",
+        "shims.d.ts",
+        "pinscompat.ts",
+        "enums.d.ts",
+        "pxtparts.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "yotta": {
+        "config": {
+            "codal": {
+                "component_count": 64,
+                "dmesg_buffer_size": 1024
+            }
+        }
+    },
+    "public": true,
+    "dalDTS": {
+        "includeDirs": [
+            "libraries/codal-core/inc",
+            "pxtapp"
+        ],
+        "excludePrefix": [
+            "USB_",
+            "REQUEST_",
+            "LIS3DH_",
+            "FXOS8700_",
+            "HF2_",
+            "PXT_REF_TAG_",
+            "MS_",
+            "SCSI_"
+        ]
+    },
+    "dependencies": {
+        "base": "file:../base"
+    }
+}
