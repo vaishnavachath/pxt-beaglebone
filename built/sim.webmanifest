@@ -1,0 +1,24 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "MakeCode Beaglebone",
+  "short_name": "beaglebone",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "@cdnUrl@/blob/148fb86d47e8a5d13ef4ebb227aaa3b6c9fc1364/static/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "types": "image/png"
+    },
+    {
+      "src": "@cdnUrl@/blob/d57743c0eeb36eb085b7c81a72626ffa86550367/static/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "types": "image/png"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#ecf0f1"
+}

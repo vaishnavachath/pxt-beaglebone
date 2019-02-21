@@ -1325,7 +1325,7 @@ var pxsim;
                 function run() {
                     if(!bonescript)
                     bonescript = require('bonescript');   
-                    bonescript .analogWrite(_this.BonescriptName, 0.03+((value/180.0)*0.115), 60, function(){});
+                    bonescript.analogWrite(_this.BonescriptName, 0.03+((value/180.0)*0.115), 60, function(){});
                 }
               });
             pxsim.runtime.queueDisplayUpdate();
@@ -1439,9 +1439,9 @@ var pxsim;
             } else  if(id>=150 && id <200){
                 pin.BonescriptName="P9_"+(id-150+1).toString();
             } else  if(id>=200 && id <250){
-                pin.BonescriptName="P1_"+(id-200+1).toString();
+                pin.BonescriptName="P2_"+(id-200+1).toString();
             } else  if(id>=250 && id <300){
-                pin.BonescriptName="P2_"+(id-250+1).toString();
+                pin.BonescriptName="P1_"+(id-250+1).toString();
             }
             return pin || null;
         };

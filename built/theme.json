@@ -1,0 +1,343 @@
+{
+  "accentColor": "#ecf0f1",
+  "backgroundColor": "#ffffff",
+  "logoUrl": "https://github.com/vaishnav98/pxt-beaglebone",
+  "logo": "./static/logo.svg",
+  "docsLogo": "./static/logo.svg",
+  "portraitLogo": "./static/logo.svg",
+  "footerLogo": "./static/logo.svg",
+  "organization": "Microsoft MakeCode",
+  "organizationUrl": "https://makecode.com/",
+  "organizationLogo": "./static/Microsoft-logo_rgb_c-gray-square.png",
+  "organizationWideLogo": "./static/Microsoft-logo_rgb_c-gray.png",
+  "homeUrl": "https://vaishnav98.github.io/pxt-beaglebone/index.html",
+  "embedUrl": "https://vaishnav98.github.io/pxt-beaglebone/index.html",
+  "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
+  "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
+  "githubUrl": "https://github.com/vaishnav98/pxt-beaglebone",
+  "feedbackUrl": "https://github.com/vaishnav98/pxt-beaglebone/issues",
+  "betaUrl": "https://github.com/vaishnav98/pxt-beaglebone",
+  "boardName": "board",
+  "homeScreenHero": "./static/hero.png",
+  "debugger": true,
+  "print": true,
+  "chooseBoardOnNewProject": true,
+  "lightToc": true,
+  "instructions": true,
+  "docMenu": [
+    {
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "name": "Boards",
+      "path": "/boards"
+    },
+    {
+      "name": "Blocks",
+      "path": "/blocks"
+    },
+    {
+      "name": "JavaScript",
+      "path": "/javascript"
+    },
+    {
+      "name": "Reference",
+      "path": "/reference"
+    },
+    {
+      "name": "GitHub",
+      "path": "https://github.com/vaishnav98/pxt-beaglebone"
+    }
+  ],
+  "invertedMenu": false,
+  "invertedToolbox": false,
+  "invertedMonaco": false,
+  "monacoToolbox": true,
+  "highContrast": true,
+  "greenScreen": true,
+  "simAnimationEnter": "fly right in",
+  "simAnimationExit": "fly right out",
+  "hasAudio": false,
+  "disableBlockIcons": true,
+  "blocklyOptions": {
+    "grid": {
+      "spacing": 20,
+      "length": 2,
+      "colour": "rgba(189, 195, 199, 0.20)",
+      "snap": true
+    }
+  },
+  "blockColors": {
+    "loops": "#40bf4a",
+    "logic": "#4cbfe6",
+    "math": "#9966ff",
+    "variables": "#FF6680",
+    "text": "#ffab19",
+    "advanced": "#00272B",
+    "functions": "#005a9e",
+    "arrays": "#8A1C7C"
+  },
+  "allowPackageExtensions": true,
+  "extendEditor": true,
+  "crowdinProject": "kindscript",
+  "scriptManager": true,
+  "TOC": [
+    {
+      "name": "About",
+      "subitems": [],
+      "path": "/about"
+    },
+    {
+      "name": "FAQ",
+      "subitems": [],
+      "path": "/faq"
+    },
+    {
+      "name": "Projects",
+      "subitems": [],
+      "path": "/projects"
+    },
+    {
+      "name": "Reference",
+      "subitems": [],
+      "path": "/reference"
+    },
+    {
+      "name": "Blocks",
+      "subitems": [
+        {
+          "name": "On Start",
+          "subitems": [],
+          "path": "/blocks/on-start"
+        },
+        {
+          "name": "Loops",
+          "subitems": [
+            {
+              "name": "repeat",
+              "subitems": [],
+              "path": "/blocks/loops/repeat"
+            },
+            {
+              "name": "for",
+              "subitems": [],
+              "path": "/blocks/loops/for"
+            },
+            {
+              "name": "while",
+              "subitems": [],
+              "path": "/blocks/loops/while"
+            },
+            {
+              "name": "for of",
+              "subitems": [],
+              "path": "/blocks/loops/for-of"
+            }
+          ],
+          "path": "/blocks/loops"
+        },
+        {
+          "name": "Logic",
+          "subitems": [
+            {
+              "name": "if",
+              "subitems": [],
+              "path": "/blocks/logic/if"
+            },
+            {
+              "name": "Boolean",
+              "subitems": [],
+              "path": "/blocks/logic/boolean"
+            }
+          ],
+          "path": "/blocks/logic"
+        },
+        {
+          "name": "Variables",
+          "subitems": [
+            {
+              "name": "assign",
+              "subitems": [],
+              "path": "/blocks/variables/assign"
+            },
+            {
+              "name": "change var",
+              "subitems": [],
+              "path": "/blocks/variables/change"
+            },
+            {
+              "name": "var",
+              "subitems": [],
+              "path": "/blocks/variables/var"
+            }
+          ],
+          "path": "/blocks/variables"
+        },
+        {
+          "name": "Math",
+          "subitems": [],
+          "path": "/blocks/math"
+        },
+        {
+          "name": "JavaScript blocks",
+          "subitems": [],
+          "path": "/blocks/javascript-blocks"
+        },
+        {
+          "name": "Custom blocks",
+          "subitems": [],
+          "path": "/blocks/custom"
+        }
+      ],
+      "path": "/blocks"
+    },
+    {
+      "name": "JavaScript",
+      "subitems": [
+        {
+          "name": "Calling",
+          "subitems": [],
+          "path": "/javascript/call"
+        },
+        {
+          "name": "Sequencing",
+          "subitems": [],
+          "path": "/javascript/sequence"
+        },
+        {
+          "name": "Variables",
+          "subitems": [],
+          "path": "/javascript/variables"
+        },
+        {
+          "name": "Operators",
+          "subitems": [],
+          "path": "/javascript/operators"
+        },
+        {
+          "name": "Statements",
+          "subitems": [],
+          "path": "/javascript/statements"
+        },
+        {
+          "name": "Functions",
+          "subitems": [],
+          "path": "/javascript/functions"
+        },
+        {
+          "name": "Types",
+          "subitems": [],
+          "path": "/javascript/types"
+        },
+        {
+          "name": "Classes",
+          "subitems": [],
+          "path": "/javascript/classes"
+        },
+        {
+          "name": "Interfaces",
+          "subitems": [],
+          "path": "/javascript/interfaces"
+        },
+        {
+          "name": "Generics",
+          "subitems": [],
+          "path": "/javascript/generics"
+        }
+      ],
+      "path": "/javascript"
+    },
+    {
+      "name": "Types",
+      "subitems": [
+        {
+          "name": "Number",
+          "subitems": [],
+          "path": "/types/number"
+        },
+        {
+          "name": "String",
+          "subitems": [],
+          "path": "/types/string"
+        },
+        {
+          "name": "Boolean",
+          "subitems": [],
+          "path": "/types/boolean"
+        },
+        {
+          "name": "Array",
+          "subitems": [],
+          "path": "/types/array"
+        },
+        {
+          "name": "Function",
+          "subitems": [],
+          "path": "/types/function"
+        }
+      ],
+      "path": "/types"
+    },
+    {
+      "name": "",
+      "subitems": [
+        {
+          "name": "About",
+          "subitems": [],
+          "path": "/about"
+        },
+        {
+          "name": "Support",
+          "subitems": [],
+          "path": "/support"
+        },
+        {
+          "name": "Translate",
+          "subitems": [],
+          "path": "/translate"
+        },
+        {
+          "name": "Sharing projects",
+          "subitems": [],
+          "path": "/share"
+        },
+        {
+          "name": "Offline support",
+          "subitems": [],
+          "path": "/offline"
+        },
+        {
+          "name": "Save",
+          "subitems": [],
+          "path": "/save"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "subitems": [
+        {
+          "name": "Command Line Interface",
+          "subitems": [],
+          "path": "/cli"
+        },
+        {
+          "name": "Visual Studio Code support",
+          "subitems": [],
+          "path": "/code"
+        },
+        {
+          "name": "Blocks Embed",
+          "subitems": [],
+          "path": "/blocks-embed"
+        }
+      ]
+    }
+  ],
+  "id": "beaglebone",
+  "title": "MakeCode Beaglebone - Blocks / Javascript editor",
+  "name": "MakeCode Beaglebone",
+  "description": "A Blocks / JavaScript code editor for Beaglebone Boards",
+  "htmlDocIncludes": {}
+}

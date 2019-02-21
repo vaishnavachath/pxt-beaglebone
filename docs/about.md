@@ -8,18 +8,18 @@ You can program the @boardname@ using [Blocks](/blocks) or [JavaScript](/javascr
 
 ```blocks
 forever(function() {
-    pins.LED.digitalWrite(true)
+    pins.USR0.digitalWrite(true)
     pause(500)
-    pins.LED.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
     pause(500)    
 })
 ```
 
 ```typescript
 forever(function() {
-    pins.LED.digitalWrite(true)
+    pins.USR0.digitalWrite(true)
     pause(500)
-    pins.LED.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
     pause(500)    
 })
 ```
@@ -33,13 +33,13 @@ You can run your code using the Beaglebone Makecode simulator, all within the co
 
 ```sim
 forever(function() {
-    pins.LED.digitalWrite(true)
+    pins.USR0.digitalWrite(true)
     pause(500)
-    pins.LED.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
     pause(500)    
 })
 ```
 
 ## Open Source
 
-Maker is open source on GitHub at https://github.com/vaishnav98/pxt-maker .
+Makecode Beaglebone is open source on GitHub at https://github.com/vaishnav98/pxt-beaglebone .
