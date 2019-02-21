@@ -66,7 +66,7 @@
     "appTheme": {
         "accentColor": "#ecf0f1",
         "backgroundColor": "#ffffff",
-        "logoUrl": "https://github.com/vaishnav98/pxt-maker",
+        "logoUrl": "https://github.com/vaishnav98/pxt-beaglebone",
         "logo": "./static/logo.svg",
         "docsLogo": "./static/logo.svg",
         "portraitLogo": "./static/logo.svg",
@@ -75,13 +75,13 @@
         "organizationUrl": "https://makecode.com/",
         "organizationLogo": "./static/Microsoft-logo_rgb_c-gray-square.png",
         "organizationWideLogo": "./static/Microsoft-logo_rgb_c-gray.png",
-        "homeUrl": "https://maker.makecode.com/",
-        "embedUrl": "https://maker.makecode.com/",
+        "homeUrl": "https://vaishnav98.github.io/pxt-beaglebone/index.html",
+        "embedUrl": "https://vaishnav98.github.io/pxt-beaglebone/index.html",
         "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
         "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
-        "githubUrl": "https://github.com/vaishnav98/pxt-maker",
-        "feedbackUrl": "https://github.com/vaishnav98/pxt-maker/issues",
-        "betaUrl": "https://github.com/vaishnav98/pxt-maker",
+        "githubUrl": "https://github.com/vaishnav98/pxt-beaglebone",
+        "feedbackUrl": "https://github.com/vaishnav98/pxt-beaglebone/issues",
+        "betaUrl": "https://github.com/vaishnav98/pxt-beaglebone",
         "boardName": "board",
         "homeScreenHero": "./static/hero.png",
         "debugger": true,
@@ -112,7 +112,7 @@
             },
             {
                 "name": "GitHub",
-                "path": "https://github.com/vaishnav98/pxt-maker"
+                "path": "https://github.com/vaishnav98/pxt-beaglebone"
             }
         ],
         "invertedMenu": false,
