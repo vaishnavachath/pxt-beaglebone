@@ -1,0 +1,110 @@
+{
+  "id": "beaglebone",
+  "platformid": "pxtbeagle",
+  "nickname": "beaglebone",
+  "name": "MakeCode Beaglebone",
+  "title": "MakeCode Beaglebone - Blocks / Javascript editor",
+  "description": "A Blocks / JavaScript code editor for Beaglebone Boards",
+  "corepkg": "beagleboneblack",
+  "serial": {
+    "useEditor": true,
+    "log": true,
+    "editorTheme": {
+      "graphBackground": "#d9d9d9",
+      "lineColors": [
+        "#CC2936",
+        "#FFC914",
+        "#2EB7ED",
+        "#FB48C7",
+        "#08415C",
+        "#C200C0"
+      ]
+    }
+  },
+  "simulator": {
+    "autoRun": true,
+    "streams": false,
+    "aspectRatio": 1,
+    "parts": true,
+    "instructions": false,
+    "partsAspectRatio": 0.69,
+    "dynamicBoardDefinition": true
+  },
+  "cloud": {
+    "workspace": false,
+    "packages": true,
+    "sharing": true,
+    "publishing": true,
+    "importing": true,
+    "preferredPackages": [],
+    "githubPackages": true
+  },
+  "runtime": {
+    "mathBlocks": true,
+    "loopsBlocks": true,
+    "logicBlocks": true,
+    "variablesBlocks": true,
+    "textBlocks": true,
+    "listsBlocks": true,
+    "functionBlocks": true,
+    "onStartNamespace": "loops",
+    "onStartColor": "#40bf4a",
+    "onStartWeight": 100,
+    "pauseUntilBlock": {
+      "category": "loops"
+    }
+  },
+  "compile": {
+    "isNative": false,
+    "switches": {},
+    "jsRefCounting": false,
+    "vtableShift": 2,
+    "noSourceInFlash": true,
+    "utf8": true
+  },
+  "ignoreDocsErrors": true,
+  "versions": {
+    "target": "0.0.1",
+    "pxt": "5.4.7"
+  },
+  "blocksprj": {
+    "id": "blocksprj",
+    "config": {
+      "name": "{0}",
+      "dependencies": {
+        "beagleboneblack": "*"
+      },
+      "description": "",
+      "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+      ],
+      "additionalFilePaths": []
+    },
+    "files": {
+      "main.blocks": "<xml xmlns=\"http://www.w3.org/1999/xhtml\">\n  <block type=\"pxt-on-start\" x=\"0\" y=\"0\"></block>\n  <block type=\"forever\" x=\"176\" y=\"0\"></block>\n</xml>",
+      "main.ts": "\n",
+      "README.md": ""
+    }
+  },
+  "tsprj": {
+    "id": "tsprj",
+    "config": {
+      "name": "{0}",
+      "dependencies": {
+        "beagleboneblack": "*"
+      },
+      "description": "",
+      "files": [
+        "main.ts",
+        "README.md"
+      ],
+      "additionalFilePaths": []
+    },
+    "files": {
+      "main.ts": "\n",
+      "README.md": ""
+    }
+  }
+}
