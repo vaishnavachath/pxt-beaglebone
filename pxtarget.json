@@ -5,12 +5,13 @@
     "name": "MakeCode Beaglebone",
     "title": "MakeCode Beaglebone - Blocks / Javascript editor",
     "description": "A Blocks / JavaScript code editor for Beaglebone Boards",
-    "corepkg": "beagleboneblack",
+    "corepkg": "core",
     "bundleddirs": [
         "libs/core",
         "libs/base",
         "libs/pocketbeagle",
-        "libs/beagleboneblack"
+        "libs/beagleboneblack",
+        "libs/beaglegreen"
     ],
     "serial": {
         "useEditor": true,
