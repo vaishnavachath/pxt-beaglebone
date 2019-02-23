@@ -8,11 +8,11 @@ Turn on and off the light pin to create a blinking effect.
 
 ## Step 1 @fullscreen
 
-Add a ``||pins:digital write||`` block to turn the ``D0`` pin ``LOW``.
+Add a ``||pins:digital write||`` block to turn the ``USR0`` pin ``LOW``.
 
 ```blocks
 forever(function() {
-    pins.D0.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
 })
 ```
 
@@ -29,9 +29,9 @@ Make sure the digital write is **HIGH**.
 
 ```blocks
 forever(function() {
-    pins.D0.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
     pause(500)
-    pins.D0.digitalWrite(true)
+    pins.USR0.digitalWrite(true)
     pause(500)    
 })
 ```
@@ -42,12 +42,8 @@ Play with the duration in your pauses to create different patterns.
 
 Look at the simulator and make sure your program works as expected. 
 
-If you have a @boardname@, press ``|Download|`` and follow the instruction to get your code on your device.
+If you have a @boardname@, wire up the circuit and the code should work now on the connected board.
 
 Click on the **wrench** icon under the simulator to get detailed breadboarding instructions.
 
 ![The wrench button](/static/projects/digital-io/blinky/wrench.png)
-
-```config
-feature=pind0
-```
