@@ -474,20 +474,17 @@
     <div class="ui text">
         <h1 id="switchy">Switchy</h1><h2 id="introduction-unplugged">Introduction </h2><p>Attach a switch on a digital pin to turn a LED on or off.</p>
 <p><img class="ui centered image" src="/static/projects/digital-io/switch-led/gallery.gif" alt="A simulated breadboard with a switch that controls an LED"></p>
-<h2 id="step-1-fullscreen">Step 1 </h2><p>Add a <code>||pins:digital write||</code> block under the <code>||loops:forever||</code> to set pin <strong>D1</strong> to <code>LOW</code> (false).</p>
+<h2 id="step-1-fullscreen">Step 1 </h2><p>Add a <code>||pins:digital write||</code> block under the <code>||loops:forever||</code> to set pin <strong>USR0</strong> to <code>LOW</code> (false).</p>
 <pre><code class="lang-blocks">forever(function () {
-    pins.D1.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
 })</code></pre>
-<h2 id="step-2-fullscreen">Step 2 </h2><p>Add a <code>||pins:digital read||</code> block in the <code>LOW</code>/<code>HIGH</code> slot. Change the pin to <strong>D0</strong>.</p>
+<h2 id="step-2-fullscreen">Step 2 </h2><p>Add a <code>||pins:digital read||</code> block in the <code>LOW</code>/<code>HIGH</code> slot. Change the pin to <strong>P8_07</strong>.</p>
 <pre><code class="lang-blocks">forever(function () {
-    pins.D1.digitalWrite(pins.D0.digitalRead())
+    pins.USR0.digitalWrite(pins.P8_07.digitalRead())
 })</code></pre>
 <h2 id="step-3-fullscreen">Step 3 </h2><p>Look at the simulator and test if your program works as you would expect. If you move the switch, the LED
 should turn on and off.</p>
-<h2 id="step-4-fullscreen">Step 4 </h2><p>Click <code>||Download||</code> to download your code into your board and click the <strong>wrench</strong> to get detailled
-breadboarding instructions.</p>
-<pre><code class="lang-config">feature=pind0
-feature=pind1</code></pre>
+<h2 id="step-4-fullscreen">Step 4 </h2><p>If you have a board, wire up the circuit and the code should work now on the connected board and click the <strong>wrench</strong> to get detailed breadboarding instructions.</p>
 
     </div>
 

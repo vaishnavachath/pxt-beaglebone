@@ -474,26 +474,24 @@
     <div class="ui text">
         <h1 id="blink-to-light">Blink to Light</h1><h2 id="introduction-unplugged">Introduction </h2><p>Blink an LED where the tempo is controlled by a light sensor.</p>
 <p><img class="ui centered image" src="/static/projects/analog-io/blink-to-light/gallery.gif" alt="An LED blinking based on a light sensor"></p>
-<h2 id="step-1-fullscreen">Step 1 </h2><p>Add the code to drives a <strong>blinking LED</strong> on pin <strong>D0</strong>.</p>
+<h2 id="step-1-fullscreen">Step 1 </h2><p>Add the code to drives a <strong>blinking LED</strong> on pin <strong>USR0</strong>.</p>
 <pre><code class="lang-blocks">forever(function () {
-    pins.D0.digitalWrite(true)
+    pins.USR0.digitalWrite(true)
     pause(100)
-    pins.D0.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
     pause(100)
 })</code></pre>
-<h2 id="step-2-fullscreen">Step 2 </h2><p>Insert a <code>||pins:analog read||</code> block for <strong>A0</strong> in the first <code>||loops:pause||</code> block.
-The <code>||pins:analog read||</code> returns a value between 0 (no input) to 1023 (full input) which will be translated in milliseconds of pause.</p>
+<h2 id="step-2-fullscreen">Step 2 </h2><p>Insert a <code>||pins:analog read||</code> block for <strong>P9_35</strong> in the first <code>||loops:pause||</code> block.
+The <code>||pins:analog read||</code> returns a value between 0 (no input) to 1 (full input) which will be translated in milliseconds of pause.</p>
 <pre><code class="lang-blocks">forever(function () {
-    pins.D0.digitalWrite(true)
-    pause(pins.A0.analogRead())
-    pins.D0.digitalWrite(false)
+    pins.USR0.digitalWrite(true)
+    pause(pins.P9_35.analogRead() * 1000)
+    pins.USR0.digitalWrite(false)
     pause(100)
 })</code></pre>
 <h2 id="step-3-fullscreen">Step 3 </h2><p>Look at the simulator and make sure your program works as expected. </p>
-<p>If you have a board, press <code>|Download|</code> and follow the instruction to get your code on your device.</p>
+<p>If you have a board, wire up the circuit and the code should work now on the connected board.</p>
 <p>Click on the <strong>wrench</strong> icon under the simulator to get detailed breadboarding instructions.</p>
-<pre><code class="lang-config">feature=pind0
-feature=pina0</code></pre>
 
     </div>
 

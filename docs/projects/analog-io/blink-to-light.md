@@ -8,27 +8,27 @@ Blink an LED where the tempo is controlled by a light sensor.
 
 ## Step 1 @fullscreen
 
-Add the code to drives a **blinking LED** on pin **D0**.
+Add the code to drives a **blinking LED** on pin **USR0**.
 
 ```blocks
 forever(function () {
-    pins.D0.digitalWrite(true)
+    pins.USR0.digitalWrite(true)
     pause(100)
-    pins.D0.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
     pause(100)
 })
 ```
 
 ## Step 2 @fullscreen
 
-Insert a ``||pins:analog read||`` block for **A0** in the first ``||loops:pause||`` block.
-The ``||pins:analog read||`` returns a value between 0 (no input) to 1023 (full input) which will be translated in milliseconds of pause.
+Insert a ``||pins:analog read||`` block for **P9_35** in the first ``||loops:pause||`` block.
+The ``||pins:analog read||`` returns a value between 0 (no input) to 1 (full input) which will be translated in milliseconds of pause.
 
 ```blocks
 forever(function () {
-    pins.D0.digitalWrite(true)
-    pause(pins.A0.analogRead())
-    pins.D0.digitalWrite(false)
+    pins.USR0.digitalWrite(true)
+    pause(pins.P9_35.analogRead() * 1000)
+    pins.USR0.digitalWrite(false)
     pause(100)
 })
 ```
@@ -37,11 +37,6 @@ forever(function () {
 
 Look at the simulator and make sure your program works as expected. 
 
-If you have a @boardname@, press ``|Download|`` and follow the instruction to get your code on your device.
+If you have a @boardname@, wire up the circuit and the code should work now on the connected board.
 
 Click on the **wrench** icon under the simulator to get detailed breadboarding instructions.
-
-```config
-feature=pind0
-feature=pina0
-```

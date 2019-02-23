@@ -8,21 +8,21 @@ Attach a switch on a digital pin to turn a LED on or off.
 
 ## Step 1 @fullscreen
 
-Add a ``||pins:digital write||`` block under the ``||loops:forever||`` to set pin **D1** to ``LOW`` (false).
+Add a ``||pins:digital write||`` block under the ``||loops:forever||`` to set pin **USR0** to ``LOW`` (false).
 
 ```blocks
 forever(function () {
-    pins.D1.digitalWrite(false)
+    pins.USR0.digitalWrite(false)
 })
 ```
 
 ## Step 2 @fullscreen
 
-Add a ``||pins:digital read||`` block in the ``LOW``/``HIGH`` slot. Change the pin to **D0**.
+Add a ``||pins:digital read||`` block in the ``LOW``/``HIGH`` slot. Change the pin to **P8_07**.
 
 ```blocks
 forever(function () {
-    pins.D1.digitalWrite(pins.D0.digitalRead())
+    pins.USR0.digitalWrite(pins.P8_07.digitalRead())
 })
 ```
 
@@ -33,10 +33,5 @@ should turn on and off.
 
 ## Step 4 @fullscreen
 
-Click ``||Download||`` to download your code into your board and click the **wrench** to get detailled
-breadboarding instructions.
+If you have a @boardname@, wire up the circuit and the code should work now on the connected board and click the **wrench** to get detailed breadboarding instructions.
 
-```config
-feature=pind0
-feature=pind1
-```
