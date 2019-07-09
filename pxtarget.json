@@ -11,7 +11,8 @@
         "libs/base",
         "libs/pocketbeagle",
         "libs/beagleboneblack",
-        "libs/beaglegreen"
+        "libs/beaglegreen",
+        "libs/techlab"
     ],
     "serial": {
         "useEditor": true,
@@ -124,7 +125,7 @@
         "greenScreen": true,
         "simAnimationEnter": "fly right in",
         "simAnimationExit": "fly right out",
-        "hasAudio": false,
+        "hasAudio": true,
         "disableBlockIcons": true,
         "blocklyOptions": {
             "grid": {

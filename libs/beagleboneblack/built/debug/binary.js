@@ -126,9 +126,9 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    r0 = globals._pollEventQueue___121;
+    r0 = globals._pollEventQueue___123;
     r0 = undefined;
-    globals._pollEventQueue___121 = (r0);
+    globals._pollEventQueue___123 = (r0);
     return leave(s, r0)
   default: oops()
 } } }

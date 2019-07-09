@@ -1,0 +1,44 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="pxt-on-start" x="0" y="0"></block>
+  <block type="forever" x="176" y="0">
+    <statement name="HANDLER">
+      <block type="device_set_digital_pin">
+        <field name="name">pins.P2_11</field>
+        <value name="value">
+          <shadow type="toggleHighLow">
+            <field name="high">false</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_pause">
+            <value name="pause">
+              <shadow type="timePicker">
+                <field name="ms">100</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="device_set_digital_pin">
+                <field name="name">pins.P2_11</field>
+                <value name="value">
+                  <shadow type="toggleHighLow">
+                    <field name="high">true</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="control_pause">
+                    <value name="pause">
+                      <shadow type="timePicker">
+                        <field name="ms">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

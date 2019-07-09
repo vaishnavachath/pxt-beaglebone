@@ -32,3 +32,13 @@
     }
 ]
 ```
+```codecard
+[
+    {
+        "name": "Techlab Cape",
+        "url": "/boards/techlab",
+        "cardType": "template",
+        "imageUrl": "/static/libs/techlab.jpg"  
+    }
+]
+```

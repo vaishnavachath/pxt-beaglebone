@@ -1,6 +1,6 @@
 'use strict';
 pxsim.noRefCounting();
-pxsim.setTitle("pocketbeagle");
+pxsim.setTitle("techlab");
 pxsim.setConfigData({
  "1": 1,
  "2": 2,

@@ -105,19 +105,33 @@ declare namespace loops {
     //% blockId=device_pause_deprecated shim=loops::pause
     function pause(ms: int32): void;
 }
+declare namespace Clickboards {
+
+    /**
+     * Insert a Mikroe Click via Greybus Simulator.
+     */
+    //% blockId="insclick" block="insert click %c at port %p" weight=53 shim=Clickboards::insclick
+    function insclick(c: string, p: string): void;
+
+    /**
+     * Remove a Mikroe Click added via Greybus Simulator.
+     */
+    //% blockId="rmclick" block="remove click %c" weight=52 shim=Clickboards::rmclick
+    function rmclick(c: string): void;
+}
 declare namespace textFile {
 
     /**
      * Derive a unique, consistent serial number of this control from internal data.
      */
-    //% blockId="textFile_read" block="read Textfile %s | .txt" weight=53
+    //% blockId="textFile_read" block="read Textfile %s " weight=53
     //% promise async shim=textFile::readTextfile
     function readTextfile(s: string): string;
 
     /**
      * Derive a unique, consistent serial number of this control from internal data.
      */
-    //% blockId="textFile_write" block="write %d |to %f | .txt " weight=52 shim=textFile::writeTextfile
+    //% blockId="textFile_write" block="write %d |to %f  " weight=52 shim=textFile::writeTextfile
     function writeTextfile(f: string, d: string): void;
 }
 declare namespace control {

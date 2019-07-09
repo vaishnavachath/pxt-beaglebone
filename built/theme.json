@@ -58,7 +58,7 @@
   "greenScreen": true,
   "simAnimationEnter": "fly right in",
   "simAnimationExit": "fly right out",
-  "hasAudio": false,
+  "hasAudio": true,
   "disableBlockIcons": true,
   "blocklyOptions": {
     "grid": {

@@ -1,4 +1,4 @@
-# PocketBeagle
+# Techlab Cape  
 
 ```blocks
 forever(function() {
@@ -7,5 +7,5 @@ forever(function() {
 ```
 
 ```package
-pocketbeagle
+techlab
 ```

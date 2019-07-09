@@ -4443,7 +4443,7 @@ var pxsim;
                 function run() {
                     if(!bonescript)
                     bonescript = require('bonescript');
-                    bonescript.readTextFile(filename+".txt", printStatus);
+                    bonescript.readTextFile(filename, printStatus);
                     function printStatus(err,data) {
                     resolve(data);    
                     }                  
@@ -4469,7 +4469,7 @@ var pxsim;
                 function run() {
                     if(!bonescript)
                     bonescript = require('bonescript');
-                    bonescript.writeTextFile(filename+".txt", data, readStatus);
+                    bonescript.writeTextFile(filename, data, readStatus);
                     function readStatus(err) {
                       resolve(true);  
                     }     
@@ -4479,4 +4479,69 @@ var pxsim;
          }
          textFile.writeTextfile = writeTextfile;
     })(textFile = pxsim.textFile || (pxsim.textFile = {}));
+})(pxsim || (pxsim = {}));
+(function (pxsim) {
+    var Clickboards;
+    (function (Clickboards) {
+        /**
+         * Read the connector value as analog, that is, as a value comprised between 0 and 1023.
+         */
+        function insclick() {
+           return ""
+        }
+        Clickboards.insclick = insclick;
+        /**
+         * Read the connector value as analog, that is, as a value comprised between 0 and 1023.
+         */
+        function insclick(clickname,port) {
+            return new Promise(function(resolve, reject) {
+                if(!bonescript){
+                setTargetAddress('beaglebone.local', {
+                    initialized: run
+                });
+                setTargetAddress('192.168.7.2', {
+                    initialized: run
+                });
+            }
+            else 
+            run();
+                function run() {
+                    if(!bonescript)
+                    bonescript = require('bonescript');
+                    bonescript.insclick(clickname,port, printStatus);
+                    function printStatus(err,data) {
+                    resolve(data);    
+                    }                  
+                }
+              });
+         }
+         Clickboards.insclick = insclick;
+          /**
+         * Read the connector value as analog, that is, as a value comprised between 0 and 1023.
+         */
+        function rmclick(clickname) {
+            return new Promise(function(resolve, reject) {
+                if(!bonescript){
+                setTargetAddress('beaglebone.local', {
+                    initialized: run
+                });
+                setTargetAddress('192.168.7.2', {
+                    initialized: run
+                });
+            }
+            else 
+            run();
+                function run() {
+                    if(!bonescript)
+                    bonescript = require('bonescript');
+                    bonescript.rmclick(clickname, readStatus);
+                    function readStatus(err) {
+                      resolve(true);  
+                    }     
+                
+                }
+              });
+         }
+         Clickboards.rmclick = rmclick;
+    })(Clickboards = pxsim.Clickboards || (pxsim.Clickboards = {}));
 })(pxsim || (pxsim = {}));

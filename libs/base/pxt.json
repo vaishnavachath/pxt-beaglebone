@@ -11,6 +11,8 @@
         "enums.d.ts",
         "loops.cpp",
         "math.ts",
+        "clicks.cpp",
+        "clicks.ts",
         "textFile.cpp",
         "textFile.ts",
         "control.ts",
