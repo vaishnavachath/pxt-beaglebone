@@ -4519,7 +4519,7 @@ var pxsim;
           /**
          * Read the connector value as analog, that is, as a value comprised between 0 and 1023.
          */
-        function rmclick(clickname) {
+        function rmclick(clickname,port) {
             return new Promise(function(resolve, reject) {
                 if(!bonescript){
                 setTargetAddress('beaglebone.local', {
@@ -4534,7 +4534,7 @@ var pxsim;
                 function run() {
                     if(!bonescript)
                     bonescript = require('bonescript');
-                    bonescript.rmclick(clickname, readStatus);
+                    bonescript.rmclick(clickname,port, readStatus);
                     function readStatus(err) {
                       resolve(true);  
                     }     

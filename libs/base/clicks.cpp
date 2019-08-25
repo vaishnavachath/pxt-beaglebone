@@ -12,8 +12,8 @@ namespace Clickboards {
     /**
     * Remove a Mikroe Click added via Greybus Simulator.
     */
-    //% blockId="rmclick" block="remove click %c" weight=52
-    void rmclick(StringData* c) {
+    //% blockId="rmclick" block="remove click %c from port %p" weight=52
+    void rmclick(StringData* c, StringData* p) {
        
     }
     

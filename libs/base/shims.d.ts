@@ -116,8 +116,8 @@ declare namespace Clickboards {
     /**
      * Remove a Mikroe Click added via Greybus Simulator.
      */
-    //% blockId="rmclick" block="remove click %c" weight=52 shim=Clickboards::rmclick
-    function rmclick(c: string): void;
+    //% blockId="rmclick" block="remove click %c from port %p" weight=52 shim=Clickboards::rmclick
+    function rmclick(c: string, p: string): void;
 }
 declare namespace textFile {
 
